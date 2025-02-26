@@ -1,5 +1,5 @@
 name: en_words
-version: "2023.04.01"
+version: "2023.01.10"
 sort: by_weight
 use_preset_vocabulary: false
 columns:
@@ -125,5 +125,3 @@ sso	sso	0
 SSO	sso	0
 job	job	0
 IM	im	0
-mac	mac	0
-macOS	mac	0

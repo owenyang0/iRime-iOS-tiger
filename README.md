@@ -19,7 +19,7 @@ __使用小鹤双拼反查__
 ## 二、操作演示
 支持拼音反查
 
-<img width="330" src="https://raw.githubusercontent.com/owenyang0/tiger-iOS-iRime/main/%E6%BC%94%E7%A4%BA%E8%AF%B4%E6%98%8E/demo.gif">
+<img width="330" src="https://raw.githubusercontent.com/owenyang0/iRime-iOS-tiger/main/%E6%BC%94%E7%A4%BA%E8%AF%B4%E6%98%8E/demo.gif">
 
 ## 三、安装
 1. 在苹果商店下载 `iRime输入法`（现在好像要收费了）
@@ -31,7 +31,7 @@ __使用小鹤双拼反查__
 ## 四、如何更新
 如何跟官虎方案保持同步？只需去`虎码网盘/02官方码表`，下载最新的码表替换`rime`目录下的相关文件即可。
 
-<img width="100%" src="https://raw.githubusercontent.com/owenyang0/tiger-iOS-iRime/main/%E6%BC%94%E7%A4%BA%E8%AF%B4%E6%98%8E/%E6%9B%B4%E6%96%B0%E6%AD%A5%E9%AA%A4.png">
+<img width="100%" src="https://raw.githubusercontent.com/owenyang0/iRime-iOS-tiger/main/%E6%BC%94%E7%A4%BA%E8%AF%B4%E6%98%8E/%E6%9B%B4%E6%96%B0%E6%AD%A5%E9%AA%A4.png">
 
 ## 五、其它相关链接
 

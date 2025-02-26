@@ -8,7 +8,7 @@ sort: by_weight
 import_tables:
   - tigress
   - tigress_ci
-  #- tigress_simp_ci
+  - tigress_simp_ci  # 在-前面加上#号，即可关闭简词
   #- en_words # 常用英文单词，需要可加上
   - user_custom
 columns:
