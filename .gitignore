@@ -1,0 +1,9 @@
+build/
+*.userdb
+font/
+easy_english.txt
+PY_c.txt
+user.dict.yaml
+*.ignore
+user.yaml
+*.bak

@@ -1,0 +1,320 @@
+# Trime default style settings
+# encoding: utf-8
+
+config_version: '1.0'
+name: 易式键盘三重选 #方案名称
+author: 木易 #作者资讯
+
+#键盘高度等
+height:
+  A: &BMG 19 #编码区高度
+  B: &HXG 29 #候选区高度
+  C: &VJG 43 #主键盘行高
+  D: &FJG 43 #符号键盘行高
+other:
+  E: &VJH 11 #主键盘行间距
+  F: &VJL 4 #主键盘列间距
+  G: &VJY 12 #主键盘键圆角
+
+  H: &FJH 0.5 #符号键盘行间距
+  I: &FJL 0.5 #符号键盘列间距
+  J: &FJY 0.0 #符号键盘键圆角
+
+style:
+  key_height: *FJG #符号键盘行高
+  keyboards: [default, english, .number, .symbols, number, symbols] #键盘配置,所有跳转键盘都需要在这里配置，不然会出错
+  text_size: 14 #编码字体大小
+  text_height: *BMG #编码区高度
+  candidate_text_size: 20 #候选字体大小
+  candidate_view_height: *HXG #候选区高度
+  candidate_padding: 14 #候选间距
+  candidate_comment_type: 1 #逐码显示样式，1为内嵌，2为并列
+  comment_text_size: 14 #逐码提示字体大小（滤镜）
+  comment_height: 16 #逐码提示高度（滤镜）
+  show_preview: true #是否显示气泡 默认显示
+  round_corner: *FJY #符号键盘圆角
+  vertical_gap: *FJH #符号键盘行距
+  horizontal_gap: *FJL #符号键盘列距
+  # sound: "cherry.caf"
+  # sound: "yuanyang.aiff"
+  # sound: "m.aiff"
+
+#键盘布局
+preset_keyboards:
+  default:
+    ascii_mode: 0
+    author: 木易
+    height: *VJG
+    horizontal_gap: *VJL
+    vertical_gap: *VJH
+    round_corner: *VJY
+    keys:
+      - { click: q, label: Q, swipe_up: 1}
+      - { click: w, label: W, swipe_up: 2 }
+      - { click: e, label: E, swipe_up: 3 }
+      - { click: r, label: R, swipe_up: 4 }
+      - { click: t, label: T, swipe_up: 5 }
+      - { click: y, label: Y, swipe_up: 6, swipe_down: '%' }
+      - { click: u, label: U, swipe_up: 7, swipe_down: "^" }
+      - { click: i, label: I, swipe_up: 8, swipe_down: '&' }
+      - { click: o, label: O, swipe_up: 9, swipe_down: "*" }
+      - { click: p, label: P, swipe_up: 0, swipe_down: '\' }
+      - { width: 5 }
+      - { click: a, label: A, swipe_up: '!' }
+      - { click: s, label: S, swipe_up: slhFull }
+      - { click: d, label: D, swipe_up: '/'}
+      - { click: f, label: F, swipe_up: '#' }
+      - { click: g, label: G, swipe_up: '(' }
+      - { click: h, label: H, swipe_up: ')', swipe_down: _ }
+      - { click: j, label: J, swipe_up: "'", swipe_down: '"' }
+      - { click: k, label: K, swipe_up: '"' }
+      - { click: l, label: L, swipe_up: ';' }
+      - { width: 5 }
+      - {click: Shift, width: 15}
+      # - {width: 1}
+      - { click: z, label: Z, swipe_up: '`' }
+      - { click: x, label: X, swipe_up: '?' }
+      - { click: c, label: C, swipe_up: commaHalf }
+      - { click: v, label: V, swipe_up: piaoFull }
+      - { click: b, label: B, swipe_up: '@' }
+      - { click: n, label: N, swipe_up: dunFull }
+      - { click: m, label: M, swipe_up: ':' }
+      # - {width: 1}
+      - { click: BackSpace, width: 15}
+      - { click: number, width: 10 }
+      - { click: english, width: 11 }
+      - { click: ',', label: '➂', swipe_up: '，', width: 12 }
+      - { click: space, width: 36 }
+      - { click: '.', label: '➁', swipe_up: '。', width: 12 }
+      - { click: Return, width: 19 }
+    name: '默认键盘'
+    width: 10
+
+  english:
+    ascii_mode: 1
+    author: 木易
+    height: *VJG
+    horizontal_gap: *VJL
+    vertical_gap: *VJH
+    round_corner: *VJY
+    keys: 
+      - {click: q, swipe_up: "1",  swipe_down: "一"}
+      - {click: w, swipe_up: "2",  swipe_down: "二"}
+      - {click: e, swipe_up: "3",  swipe_down: "三"}
+      - {click: r, swipe_up: "4",  swipe_down: "四"}
+      - {click: t, swipe_up: "5",  swipe_down: "五"}
+      - {click: y, swipe_up: "6",  swipe_down: "六"}
+      - {click: u, swipe_up: "7",  swipe_down: "七"}
+      - {click: i, swipe_up: "8",  swipe_down: "八"}
+      - {click: o, swipe_up: "9",  swipe_down: "九"}
+      - {click: p, swipe_up: "0",  swipe_down: "〇"}
+      - {width: 5}
+      - {click: a, swipe_up: "~", swipe_down: "~"}
+      - {click: s, swipe_up: "/", swipe_down: "/"}
+      - {click: d, swipe_up: ":", swipe_down: ":"}
+      - {click: f, swipe_up: ";", swipe_down: ";"}
+      - {click: g, swipe_up: bracket2, swipe_down: "("}
+      - {click: h, swipe_up: ")", swipe_down: ")"}
+      - {click: j, swipe_up: "@",  swipe_down: "@"}
+      - {click: k, swipe_up: quotationMarkHalf2, swipe_down: '"'}
+      - {click: l, swipe_up: "”",  swipe_down: "'"}
+      - {width: 5}
+      - {click: Shift, width: 14}
+      - {width: 1}
+      - {click: z, swipe_up: "-",  swipe_down: "-"}
+      - {click: x, swipe_up: "_",  swipe_down: "_"}
+      - {click: c, swipe_up: "#",  swipe_down: "#"}
+      - {click: v, swipe_up: "?",  swipe_down: "?"}
+      - {click: b, swipe_up: "!",  swipe_down: "!"}
+      - {click: n, swipe_up: ",",  swipe_down: ","}
+      - {click: m, swipe_up: ".",  swipe_down: "."}
+      - {width: 1}
+      - {click: BackSpace, width: 14}
+      - {click: symbols, width: 14}
+      - {click: DefaultKeyboard2, width: 12}
+      - {click: .number, width: 10}
+      - {click: space, width: 34 }
+      - {click: ., swipe_up: ",", width: 10}
+      - {click: Return, width: 20}
+    name: "英文键盘"
+    width: 10
+  # number:
+  #   ascii_mode: 1
+  #   author: 木易
+  #   height: *VJG
+  #   horizontal_gap: *VJL
+  #   vertical_gap: *VJH
+  #   round_corner: *VJY
+  #   keys:
+  #     - { click: '+', swipe_up: '&' }
+  #     - { click: 1 }
+  #     - { click: 2 }
+  #     - { click: 3 }
+  #     - { click: DefaultKeyboard1 }
+  #     - { click: '-', swipe_up: '%' }
+  #     - { click: 4 }
+  #     - { click: 5 }
+  #     - { click: 6 }
+  #     - { click: .symbols1 }
+  #     - { click: '*', swipe_up: '#' }
+  #     - { click: 7 }
+  #     - { click: 8 }
+  #     - { click: 9 }
+  #     - { click: BackSpace }
+  #     - { click: '/', swipe_up: '=' }
+  #     - { click: ',' }
+  #     - { click: 0 }
+  #     - { click: '.' }
+  #     - { click: Return }
+  #   name: '数字键盘'
+  #   width: 20
+
+  number:
+    ascii_mode: 0
+    author: 木易
+    height: *VJG
+    horizontal_gap: *VJL
+    vertical_gap: *VJH
+    round_corner: *VJY
+    keys: 
+      - {click: 1}
+      - {click: 2}
+      - {click: 3}
+      - {click: 4}
+      - {click: 5}
+      - {click: 6}
+      - {click: 7}
+      - {click: 8}
+      - {click: 9}
+      - {click: 0}
+      - {click: "+"}
+      - {click: "-"}
+      - {click: "*"}
+      - {click: "/"}
+      - {click: '('}
+      - {click: ')'}
+      - {click: '%'}
+      - {click: '^'}
+      - {click: '.'}
+      - {click: "="}
+      # - {click: quotationMarkFull}
+      # - {click: quotationMarkFull1}
+      - {click: .symbols1, width: 14}
+      - {width: 3}
+      - {click: periodFull, width: 11}
+      - {click: commaFull, width: 11}
+      - {click: dunHalf, width: 11}
+      - {click: questionMark, width: 11}
+      - {click: point, width: 11}
+      - {click: '@', width: 11}
+      - {width: 3}
+      - {click: BackSpace, width: 14}
+      - {click: DefaultKeyboard, width: 25}
+      - {click: space, width: 50}
+      - {click: Return, width: 25}
+    name: "苹果数字键盘"
+    width: 10
+
+  symbols:
+    ascii_mode: 1
+    author: 木易
+    height: *VJG
+    horizontal_gap: *VJL
+    vertical_gap: *VJH
+    round_corner: *VJY
+    keys:
+      - { click: 1 }
+      - { click: 2 }
+      - { click: 3 }
+      - { click: 4 }
+      - { click: 5 }
+      - { click: 6 }
+      - { click: 7 }
+      - { click: 8 }
+      - { click: 9 }
+      - { click: 0 }
+      - { click: '@' }
+      - { click: '#' }
+      - { click: '$' }
+      - { click: '%' }
+      - { click: '&' }
+      - { click: '+' }
+      - { click: '-' }
+      - { click: '*' }
+      - { click: '/' }
+      - { click: '=' }
+      - { click: .symbols1, width: 14 }
+      - { width: 1 }
+      - { click: '?' }
+      - { click: '!' }
+      - { click: '~' }
+      - { click: '^' }
+      - { click: "'" }
+      - { click: '"' }
+      - { click: '.' }
+      - { width: 1 }
+      - { click: BackSpace, width: 14}
+      - { click: english1, width: 15 }
+      - { click: DefaultKeyboard2, width: 13 }
+      - { click: space, label: '空格', width: 40 }
+      - { click: ',', width: 15 }
+      - { click: Return, width: 17 }
+    name: '英文附属符号键盘'
+    width: 10
+preset_keys:
+  # 键盘类型需要在这里跳转，目前只支持下面的配置。
+  # 只支持 Shift Return BackSpace  space 特殊键盘配置
+  # 现在text的命令只支持:
+  #   1,Left(光标向左移动一格);
+  #   2,Right(光标向右移动一格)
+  #   3,跳转到指定键盘;
+  #   其它暂时不支持,具体看事例;
+  # 现在支持commit命令,直接上屏指定字符
+  #
+  # Left: {label: '←', send: Left}
+  # Down: {label: '↓', send: Down}
+  # Up: {label: '↑', send: Up}
+  # Right: {label: '→', send: Right}
+  # Shift: { label: Shift, send: Shift_L }
+  # Clear: {label: "⇤", text: "{Control+End}{Control+Shift+Home}{Delete}"} #全選並刪除
+  Return: { label: Enter, send: Return }
+  BackSpace: { send: BackSpace }
+  space: { label: '空格', send: space }
+  number: { label: 123, send: Eisu_toggle, select: number }
+  english:
+    { label: 'abc', functional: flase, send: Eisu_toggle, select: english }
+  english1: { label: 'abc', send: Eisu_toggle, select: english }
+  symbols: { label: '符', send: Eisu_toggle, select: symbols }
+  .symbols: { label: '符', send: Eisu_toggle, select: .symbols } #默认的符号键盘
+  .symbols1: { label: '符', text: '{.symbols}{DefaultKeyboard}' } #默认的符号键盘
+  .number: { label: 123, send: Eisu_toggle, select: .number } #默认的9宫格数据键盘
+  DefaultKeyboard:
+    { label: 中, functional: flase, send: Eisu_toggle, select: default }
+  DefaultKeyboard1: { label: 返回, send: Eisu_toggle, select: default }
+  DefaultKeyboard2:
+    { label: 中, functional: flase, send: Eisu_toggle, select: default }
+  periodHalf: { label: '.', commit: '.' } #上屏半角句号
+  periodFull: { label: '。', commit: '。' } #上屏全角句号
+  commaHalf: { label: ',', commit: ',' } #上屏半角逗号
+  commaFull: { label: '，', commit: '，' } #上屏全角逗号
+  slhFull: { label: '…', commit: '……' } #上屏省略号
+  dunFull: { label: '、', commit: '、' } #上屏顿号
+  piaoFull: { label: '～', commit: '～' } #上屏～
+  questionMark: { label: '？', text: '？{DefaultKeyboard}' }
+  point: { label: '！', text: '！{DefaultKeyboard}' }
+  semicolon: { label: '；', commit: '；' } #上屏全角分号
+  bracket: { label: '(', text: '(){Left}{DefaultKeyboard}' } #先上屏()光标往左移动一格再跳转到default键盘
+  bracket2: { label: '(', text: '(){Left}' } #先上屏()光标往左移动一格
+  bracket1: { label: ')', text: '){DefaultKeyboard}' } #先上屏)再跳转到default键盘
+  quotationMarkFull: { label: '〝', text: '〝〞{Left}{DefaultKeyboard}' }
+  quotationMarkFull1: { label: '〞', text: '〞＂{Left}{DefaultKeyboard}' }
+  quotationMarkFull2: { label: '〝', text: '〝〞{Left}' }
+  quotationMarkHalf１: { label: '"', text: '"{DefaultKeyboard}' }
+  quotationMarkHalf2: { label: '"', text: '“”{Left}' }
+  quotationMarkFull１: { label: '"', text: '＂{DefaultKeyboard}' }
+  Cixuan: { label: 次选, send: 2 }
+  Sanxuan: { label: 三选, send: 3 }
+  #左右移动光标
+  commit←: { label: '←', text: '{Left}' }
+  commit→: { label: '→', text: '{Right}' }
+  dunHalf: {label: "、", text: "、{DefaultKeyboard}"}

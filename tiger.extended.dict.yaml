@@ -1,0 +1,24 @@
+# Rime dictionary: tiger.extended
+# encoding: utf-8
+
+---
+name: tiger.extended
+version: "2.0"
+sort: by_weight
+import_tables:
+  - tiger
+# - en_words # 常用英文单词，需要可加上
+  - user_custom
+columns:
+  - text
+  - code
+  - weight
+  - stem
+encoder:
+  rules:
+    - length_equal: 2
+      formula: "AaAbBaBb"
+    - length_equal: 3
+      formula: "AaBaCaCb"
+    - length_in_range: [4, 99]
+      formula: "AaBaCaZa"
