@@ -3,7 +3,7 @@
 
 ---
 name: user_custom
-version: "2025.02.26"
+version: "2025.03.06"
 sort: by_weight
 use_preset_vocabulary: false
 columns:
@@ -255,7 +255,7 @@ encoder:
 #搞快点	uhy
 
 ## 版本号
-官方完结版2025.02.09	bbh
+官方2025.03.06	bbh
 
 ## 注：上面的词，若想调整词序，再后面加个tab，再加词频即可
 
