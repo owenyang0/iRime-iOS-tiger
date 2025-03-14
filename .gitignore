@@ -7,3 +7,4 @@ user.dict.yaml
 *.ignore
 user.yaml
 *.bak
+user_custom_bak.dict.yaml
