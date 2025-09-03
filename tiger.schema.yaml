@@ -171,11 +171,11 @@ key_binder:
     - { accept: "Control+h", toggle: extended_char, when: composing } # PC 自定字集开关
     - { accept: "Control+Shift+H", toggle: extended_char, when: composing } # PC 自定字集开关2
     - { accept: "Control+j", toggle: chaifen, when: composing } # PC 拆分滤镜开关
-    - { when: composing, accept: '&', toggle: emoji_cn } # 手机 emoji开关
-    - { when: composing, accept: '*', toggle: simplification } # 手机 繁简开关
-    - { when: composing, accept: '\', toggle: pinyin } # 手机 拼音开关
+    - { when: composing, accept: '*', toggle: emoji_cn } # 手机 emoji开关
+    - { when: composing, accept: '(', toggle: simplification } # 手机 繁简开关
+    - { when: composing, accept: ')', toggle: pinyin } # 手机 拼音开关
     - { when: composing, accept: '^', toggle: charset_comment_filter } # 手机 Unicode分区开关1
-    - { when: composing, accept: '#', toggle: charset_comment_filter } # 手机 Unicode分区开关2
+    - { when: composing, accept: '&', toggle: charset_comment_filter } # 手机 Unicode分区开关2
     - { accept: "%", toggle: udpf_switch, when: composing }  #手机 Unicode编码开关
     - { accept: "+", toggle: udpf_switch, when: composing }  #手机 Unicode编码开关
     - { when: composing, accept: '_', toggle: extended_char} # 手机 自定字集开关1

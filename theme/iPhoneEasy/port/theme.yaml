@@ -46,16 +46,16 @@ preset_keyboards:
     round_corner: *jpgd4
 #现在只支持配置click,swipe_up,swipe_down键盘
     keys: 
-      - {click: q, label: Q, swipe_up: "1",  swipe_down: "一"}
-      - {click: w, label: W, swipe_up: "2",  swipe_down: "二"}
-      - {click: e, label: E, swipe_up: "3",  swipe_down: "三"}
-      - {click: r, label: R, swipe_up: "4",  swipe_down: "四"}
-      - {click: t, label: T, swipe_up: "5",  swipe_down: "五"}
-      - {click: y, label: Y, swipe_up: "6",  swipe_down: '%' }
-      - {click: u, label: U, swipe_up: "7",  swipe_down: "^" }
-      - {click: i, label: I, swipe_up: "8",  swipe_down: '&' }
-      - {click: o, label: O, swipe_up: "9",  swipe_down: "*" }
-      - {click: p, label: P, swipe_up: "0",  swipe_down: '\' }
+      - {click: q, label: Q, swipe_up: "1", swipe_down: "一"}
+      - {click: w, label: W, swipe_up: "2", swipe_down: "二"}
+      - {click: e, label: E, swipe_up: "3", swipe_down: "三"}
+      - {click: r, label: R, swipe_up: "4", swipe_down: "四"}
+      - {click: t, label: T, swipe_up: "5", swipe_down: "五"}
+      - {click: y, label: Y, swipe_up: "6", swipe_down: '^' }
+      - {click: u, label: U, swipe_up: "7", swipe_down: "&" }
+      - {click: i, label: I, swipe_up: "8", swipe_down: '*' }
+      - {click: o, label: O, swipe_up: "9", swipe_down: "(" }
+      - {click: p, label: P, swipe_up: "0", swipe_down: ')' }
 
       - {width: 5}
       - {click: a, label: A, swipe_up: "～", swipe_down: "`"}
