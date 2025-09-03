@@ -13,7 +13,7 @@ cd "$tmp_dir/$current_dir"
 echo "当前处理目录：$(pwd)"
 
 # 删除指定目录
-find . -type d \( -name "build" -o -name ".git" \) -exec rm -rf {} + 2>/dev/null || true
+find . -type d \( -name "build" -o -name ".git" -o -path "./演示说明" -o -path "./theme/easyboard" -o -path "./theme/木易iPhone键盘" -o -path "./theme/jumboboard" \) -exec rm -rf {} + 2>/dev/null
 
 # 打包为zip（带时间戳）
 zip_name="${current_dir}_$(date +%Y%m%d%H%M%S).zip"
