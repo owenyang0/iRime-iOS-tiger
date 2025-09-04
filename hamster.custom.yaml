@@ -6,7 +6,6 @@ patch:
     - "^.*[.]keyboard[.]yaml$"
     - "^.*[.]userdb.*$"
     - "^.*build.*$"
-    - "^.*SharedSupport.*$"
     - "^.*[.]bin$"
     - "^.*theme.*$"
     - "^.*演示说明.*$"
@@ -23,27 +22,27 @@ patch:
     - {action: {character: {char: b}}, callout: [{action: {symbol: {char: B}}}, {action: {character: {char: "?"}}}, {action: {symbol: {char: b}}}], swipe: [{action: {symbol: {char: "？"}}, direction: up}]}
     - {action: {character: {char: c}}, callout: [{action: {symbol: {char: C}}}, {action: {character: {char: "#"}}}, {action: {symbol: {char: c}}}, {action: {shortcutCommand: "#复制"}, label: "复制"}], swipe: [{action: {symbol: {char: "#"}}, direction: up}]}
     - {action: {character: {char: d}}, callout: [{action: {symbol: {char: D}}}, {action: {character: {char: ":"}}}, {action: {symbol: {char: d}}}], swipe: [{action: {symbol: {char: "："}}, direction: up}]}
-    - {action: {character: {char: e}}, callout: [{action: {symbol: {char: E}}}, {action: {character: {char: "#"}}}, {action: {character: {char: 3}}}, {action: {symbol: {char: e}}}], swipe: [{action: {symbol: {char: 3}}, direction: up}]}
+    - {action: {character: {char: e}}, callout: [{action: {symbol: {char: E}}}, {action: {character: {char: "#"}}}, {action: {character: {char: 3}}}, {action: {symbol: {char: e}}}], swipe: [{action: {character: {char: 3}}, direction: up, display: true, label: {loadingText: "", systemImageName: "", text: ""}, processByRIME: true}]}
     - {action: {character: {char: f}}, callout: [{action: {symbol: {char: F}}}, {action: {character: {char: ";"}}}, {action: {symbol: {char: f}}}], swipe: [{action: {symbol: {char: "；"}}, direction: up}]}
     - {action: {character: {char: g}}, callout: [{action: {symbol: {char: G}}}, {action: {character: {char: "("}}}, {action: {symbol: {char: g}}}], swipe: [{action: {symbol: {char: "（"}}, direction: up}]}
     - {action: {character: {char: h}}, callout: [{action: {symbol: {char: H}}}, {action: {character: {char: ")"}}}, {action: {symbol: {char: h}}}], swipe: [{action: {symbol: {char: "）"}}, direction: up}]}
-    - {action: {character: {char: i}}, callout: [{action: {symbol: {char: I}}}, {action: {character: {char: "*"}}}, {action: {character: {char: 8}}}, {action: {symbol: {char: i}}}], swipe: [{action: {symbol: {char: 8}}, direction: up}]}
+    - {action: {character: {char: i}}, callout: [{action: {symbol: {char: I}}}, {action: {character: {char: "*"}}}, {action: {character: {char: 8}}}, {action: {symbol: {char: i}}}], swipe: [{action: {character: {char: 8}}, direction: up, display: true, label: {loadingText: "", systemImageName: "", text: ""}, processByRIME: true}]}
     - {action: {character: {char: j}}, callout: [{action: {symbol: {char: J}}}, {action: {character: {char: "~"}}}, {action: {symbol: {char: j}}}], swipe: [{action: {symbol: {char: "～"}}, direction: up, label: "~"}]}
     - {action: {character: {char: k}}, callout: [{action: {symbol: {char: K}}}, {action: {character: {char: "\""}}}, {action: {symbol: {char: k}}}], swipe: [{action: {symbol: {char: "“"}}, direction: up, label: "\""}]}
     - {action: {character: {char: l}}, callout: [{action: {symbol: {char: L}}}, {action: {character: {char: "\""}}}, {action: {character: {char: "'"}}}, {action: {symbol: {char: l}}}, {action: {shortcutCommand: "#左手模式"}, label: "左单"}], swipe: [{action: {character: {char: "'"}}, direction: up, display: true, label: {loadingText: "", systemImageName: "", text: ""}, processByRIME: true}]}
     - {action: {character: {char: m}}, callout: [{action: {symbol: {char: M}}}, {action: {symbol: {char: "……"}}}, {action: {symbol: {char: m}}}], swipe: [{action: {symbol: {char: "…"}}, direction: up, label: ...}]}
     - {action: {character: {char: n}}, callout: [{action: {symbol: {char: N}}}, {action: {symbol: {char: "！"}}}, {action: {symbol: {char: n}}}], swipe: [{action: {symbol: {char: "！"}}, direction: up}]}
-    - {action: {character: {char: o}}, callout: [{action: {symbol: {char: O}}}, {action: {character: {char: "("}}}, {action: {character: {char: 9}}}, {action: {symbol: {char: o}}}], swipe: [{action: {symbol: {char: 9}}, direction: up}]}
-    - {action: {character: {char: p}}, callout: [{action: {symbol: {char: P}}}, {action: {character: {char: ")"}}}, {action: {character: {char: 0}}}, {action: {symbol: {char: p}}}], swipe: [{action: {symbol: {char: 0}}, direction: up}]}
-    - {action: {character: {char: q}}, callout: [{action: {symbol: {char: Q}}}, {action: {character: {char: "!"}}}, {action: {character: {char: 1}}}, {action: {symbol: {char: q}}}], swipe: [{action: {symbol: {char: 1}}, direction: up}]}
-    - {action: {character: {char: r}}, callout: [{action: {symbol: {char: R}}}, {action: {character: {char: "$"}}}, {action: {character: {char: 4}}}, {action: {symbol: {char: r}}}], swipe: [{action: {symbol: {char: 4}}, direction: up}]}
-    - {action: {character: {char: s}}, callout: [{action: {symbol: {char: S}}}, {action: {character: {char: "/"}}}, {action: {symbol: {char: s}}}], swipe: [{action: {character: {char: "/"}}, direction: up}]}
-    - {action: {character: {char: t}}, callout: [{action: {symbol: {char: T}}}, {action: {character: {char: "%"}}}, {action: {character: {char: 5}}}, {action: {symbol: {char: t}}}], swipe: [{action: {symbol: {char: 5}}, direction: up}]}
-    - {action: {character: {char: u}}, callout: [{action: {symbol: {char: U}}}, {action: {character: {char: "&"}}}, {action: {character: {char: 7}}}, {action: {symbol: {char: u}}}], swipe: [{action: {symbol: {char: 7}}, direction: up}]}
+    - {action: {character: {char: o}}, callout: [{action: {symbol: {char: O}}}, {action: {character: {char: "("}}}, {action: {character: {char: 9}}}, {action: {symbol: {char: o}}}], swipe: [{action: {character: {char: 9}}, direction: up, display: true, label: {loadingText: "", systemImageName: "", text: ""}, processByRIME: true}]}
+    - {action: {character: {char: p}}, callout: [{action: {symbol: {char: P}}}, {action: {character: {char: ")"}}}, {action: {character: {char: 0}}}, {action: {symbol: {char: p}}}], swipe: [{action: {character: {char: 0}}, direction: up, display: true, label: {loadingText: "", systemImageName: "", text: ""}, processByRIME: true}]}
+    - {action: {character: {char: q}}, callout: [{action: {symbol: {char: Q}}}, {action: {character: {char: "!"}}}, {action: {character: {char: 1}}}, {action: {symbol: {char: q}}}], swipe: [{action: {character: {char: 1}}, direction: up, display: true, label: {loadingText: "", systemImageName: "", text: ""}, processByRIME: true}]}
+    - {action: {character: {char: r}}, callout: [{action: {symbol: {char: R}}}, {action: {character: {char: "$"}}}, {action: {character: {char: 4}}}, {action: {symbol: {char: r}}}], swipe: [{action: {character: {char: 4}}, direction: up, display: true, label: {loadingText: "", systemImageName: "", text: ""}, processByRIME: true}]}
+    - {action: {character: {char: s}}, callout: [{action: {symbol: {char: S}}}, {action: {character: {char: "/"}}}, {action: {symbol: {char: s}}}], swipe: [{action: {character: {char: "/"}}, direction: up, display: true, label: {loadingText: "", systemImageName: "", text: ""}, processByRIME: true}]}
+    - {action: {character: {char: t}}, callout: [{action: {symbol: {char: T}}}, {action: {character: {char: "%"}}}, {action: {character: {char: 5}}}, {action: {symbol: {char: t}}}], swipe: [{action: {character: {char: 5}}, direction: up, display: true, label: {loadingText: "", systemImageName: "", text: ""}, processByRIME: true}]}
+    - {action: {character: {char: u}}, callout: [{action: {symbol: {char: U}}}, {action: {character: {char: "&"}}}, {action: {character: {char: 7}}}, {action: {symbol: {char: u}}}], swipe: [{action: {character: {char: 7}}, direction: up, display: true, label: {loadingText: "", systemImageName: "", text: ""}, processByRIME: true}]}
     - {action: {character: {char: v}}, callout: [{action: {symbol: {char: V}}}, {action: {character: {char: "|"}}}, {action: {character: {char: "\\"}}}, {action: {symbol: {char: v}}}, {action: {shortcutCommand: "#粘贴"}, label: "粘贴"}], swipe: [{action: {symbol: {char: "、"}}, direction: up}]}
-    - {action: {character: {char: w}}, callout: [{action: {symbol: {char: W}}}, {action: {character: {char: "@"}}}, {action: {character: {char: 2}}}, {action: {symbol: {char: w}}}], swipe: [{action: {symbol: {char: 2}}, direction: up}]}
+    - {action: {character: {char: w}}, callout: [{action: {symbol: {char: W}}}, {action: {character: {char: "@"}}}, {action: {character: {char: 2}}}, {action: {symbol: {char: w}}}], swipe: [{action: {character: {char: 2}}, direction: up, display: true, label: {loadingText: "", systemImageName: "", text: ""}, processByRIME: true}]}
     - {action: {character: {char: x}}, callout: [{action: {symbol: {char: X}}}, {action: {character: {char: .}}}, {action: {symbol: {char: x}}}, {action: {shortcutCommand: "#剪切"}, label: "剪切"}], swipe: [{action: {character: {char: .}}, direction: up}]}
-    - {action: {character: {char: y}}, callout: [{action: {symbol: {char: Y}}}, {action: {character: {char: "^"}}}, {action: {character: {char: 6}}}, {action: {symbol: {char: y}}}], swipe: [{action: {symbol: {char: 6}}, direction: up}]}
+    - {action: {character: {char: y}}, callout: [{action: {symbol: {char: Y}}}, {action: {character: {char: "^"}}}, {action: {character: {char: 6}}}, {action: {symbol: {char: y}}}], swipe: [{action: {character: {char: 6}}, direction: up, display: true, label: {loadingText: "", systemImageName: "", text: ""}, processByRIME: true}]}
     - {action: {character: {char: z}}, callout: [{action: {symbol: {char: Z}}}, {action: {character: {char: "@"}}}, {action: {symbol: {char: z}}}, {action: {shortcutCommand: "#撤销"}, label: "撤销"}, {action: {shortcutCommand: "#重做"}, label: "重做"}], swipe: [{action: {character: {char: "@"}}, direction: up}]}
     - {action: space, swipe: [{action: {shortcutCommand: "#次选上屏"}, direction: up, display: false}]}
     - {action: enter, swipe: [{action: {shortcutCommand: "#换行"}, direction: up}]}
@@ -52,4 +51,3 @@ patch:
     - {action: {keyboardType: chineseNumeric}, swipe: [{action: {shortcutCommand: "#上个输入方案"}, direction: up}]}
   "swipe/spaceDragSensitivity": 6
   "toolbar/displayCommentOfCandidate": true
-  "toolbar/swipePaging": true
